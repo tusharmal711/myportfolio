@@ -987,7 +987,7 @@ flex-direction: column;
 
 /* about section responsive is starting from here */
 .about{
-   
+  
 }
 .ab-h{
     font-family: 'Poppins', sans-serif;
@@ -1008,6 +1008,7 @@ flex-direction: column;
 .a-t{
     margin:3rem;
     margin-top: 0;
+    margin-bottom: 0;
 }
 .about-img-background{
     display: none;
