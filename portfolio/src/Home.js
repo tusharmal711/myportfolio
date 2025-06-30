@@ -2,12 +2,20 @@
 import './Home.css';
 
 import { GrLinkedin } from "react-icons/gr";
-import { SiGmail } from "react-icons/si";
-import { FaFacebook } from "react-icons/fa";
-import { FaSquareInstagram } from "react-icons/fa6";
-import { FaGithubSquare } from "react-icons/fa";
-const Home = () => {
 
+import { FaFacebook } from "react-icons/fa";
+import { RxCross1 } from "react-icons/rx";
+import { FaGithubSquare } from "react-icons/fa";
+import { IoReorderThree } from "react-icons/io5";
+const Home = () => {
+const showNavPopup = ()=>{
+  let navPopup=document.getElementById("nav-popup");
+  navPopup.classList.add("animation");
+}
+const removeNavPopup = ()=>{
+  let navPopup=document.getElementById("nav-popup");
+  navPopup.classList.remove("animation");
+}
   return (
     <div className='container'>
       {/* Navbar */}
@@ -58,8 +66,131 @@ const Home = () => {
            <a href="#education" className="nav-link">Education</a>
           
             <a href="#contact" className="contact-nav">Contact</a>
+            
       </div>
      
+
+
+
+
+
+   {/* navbar for mobile is starting from here */}
+     
+<div className='nav-popup' id="nav-popup">
+  <RxCross1 className='cross' onClick={removeNavPopup}/>
+     <a href="#" className="nav-link-mobile">Home</a>
+        <a href="#about" className="nav-link-mobile">About</a>
+         <a href="#experience" className="nav-link-mobile">Experience</a>
+          <a href="#projects" className="nav-link-mobile">Projects</a>
+           <a href="#certification" className="nav-link-mobile">Certification</a>
+           <a href="#education" className="nav-link-mobile">Education</a>
+          
+            <a href="#contact" className="nav-link mobile-contact">Contact</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div className="nav-bar-mobile">
+          <div className='nav-icon-mobile'>
+      <a
+  href="https://www.linkedin.com/in/tushar-mal-972329338"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <GrLinkedin className="navicon nav-linkedin" />
+</a>
+
+
+      <a
+  href="https://www.naukri.com/mnjuser/profile?id=&altresid"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <img src="./Images/naukri-logo.png" className='navicon nav-naukri'/>
+</a>
+
+     <a
+  href="https://github.com/tusharmal711"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaGithubSquare className='navicon nav-github' />
+</a>
+      
+        <a
+  href="https://www.facebook.com/tushar.mal.33"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <FaFacebook className='navicon nav-facebook'/>
+</a>
+      
+     
+
+          </div>
+     
+     
+      <IoReorderThree className='three-bar' onClick={showNavPopup}/>
+     
+      
+      </div>
+     
+
+
+
+
+  {/* navbar for mobile is ending here */}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       {/* Sections */}
       <div> {/* offset for fixed navbar */}
@@ -248,8 +379,14 @@ const Home = () => {
                            <span><p>CLOUDINARY</p><p>GIT</p></span>
                            
                            <div className='project-button'>
-                               <button>Demo</button>
-                               <button>Source</button>
+                              <a href="https://mindchat-one.vercel.app/">
+                                 <button>Demo</button>
+                              </a>
+                              <a href="https://github.com/tusharmal711/MindChatDeploy">
+                                 <button>Source</button>
+                              </a>
+                              
+                              
                            </div>
                            
                     </div>
@@ -272,8 +409,13 @@ const Home = () => {
                            
                            
                            <div className='project-button'>
-                               <button>Demo</button>
+                            <a href="https://attendence.lovestoblog.com/">
+                             <button>Demo</button>
+                            </a>
+                              <a href="https://github.com/tusharmal711/AttendanceBook">
                                <button>Source</button>
+                              </a>
+                              
                            </div>
                            
                     </div>
@@ -297,8 +439,14 @@ const Home = () => {
                           
                            
                            <div className='project-button'>
+                            <a href="https://tusharmal711.github.io/calculator/">
                                <button>Demo</button>
-                               <button>Source</button>
+                            </a>
+                            <a href="https://github.com/tusharmal711/calculator">
+                                <button>Source</button>
+                            </a>
+                              
+                              
                            </div>
                            
                     </div>
@@ -464,7 +612,7 @@ const Home = () => {
                            </a>
                     
                       <a href="https://www.instagram.com/myself__tushar_/">
-                       <img src="./Images/instagram-logo.png" className='insta'/>
+                       <img src="./Images/instagram-Logo.png" className='insta'/>
                       </a>
                      
                     

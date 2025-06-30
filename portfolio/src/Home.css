@@ -16,9 +16,6 @@ section{
     height:80%;
     padding-top: 60px;
     width:100%;
-  
- 
-
 }
 .container{
     width:100%;
@@ -58,6 +55,94 @@ section{
     border:1px solid #6C4DF4;
     border-radius: 0.1rem;
 }
+
+
+/*mobile navbar part is starting from here  */
+.nav-bar-mobile{
+    float:right;
+    background-color: white;
+    color:white;
+    position: fixed;
+    width: 100%;
+    height:3.5rem;
+ 
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+.nav-icon-mobile{
+   
+   position: absolute;
+   left:1rem;
+   display: flex;
+   gap:1rem;
+}
+.three-bar{
+    font-size: 2.5rem;
+    position: absolute;
+    right:2.5rem;
+   
+    color:black;
+}
+.nav-popup{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width:100%;
+    height:72vh;
+    background-color: white;
+    z-index: 999;
+    transform: translateY(-86vh);
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.cross{
+    position: absolute;
+    top:1rem;
+    right:1.4rem;
+    font-size: 1.4rem;
+}
+
+.mobile-contact{
+     display: flex;
+   width:4rem;
+   align-items: center;
+   justify-content: center;
+    text-decoration: none;
+    font-family: sans-serif;
+    color:#6C4DF4;
+    padding:0.4rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border:1px solid #6C4DF4;
+    border-radius: 0.1rem;
+}
+.mobile-contact:hover{
+    background-color: #6C4DF4;
+    color:white;
+}
+.nav-link-mobile{
+    color:black;
+    text-decoration: none;
+    font-family: sans-serif;
+    margin:0.27rem;
+    float:right;
+    padding:0.5rem;
+    border-radius: 0.3rem;
+}
+.nav-link-mobile:hover{
+    background-color: rgb(235, 235, 235);
+}
+.animation{
+    transform: translateY(0);
+    transition: 1s all;
+}
+/* mobile navbar is ending here */
+
+
+
 
 
 
@@ -1036,7 +1121,12 @@ contact responsive is starting from here */
 }
 /* contact responsive is ending here */
 
-
+.nav-bar{
+    display: none;
+}
+.nav-bar-mobile{
+    display: flex;
+}
 
 
 
