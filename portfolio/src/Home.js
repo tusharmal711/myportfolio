@@ -235,7 +235,7 @@ const removeNavPopup = ()=>{
            <h2 className='ab-h'>About Me</h2>
          <div className='about-image'>
             <div className='about-img-background'  style={{ backgroundImage: `url('./Images/brush-background.png')`}}>
-               <img src="./Images/tushar-profile.png" className='profile-photo' alt="not load"/>
+               <img src="./Images/about-logo.png" className='profile-photo' alt="not load"/>
             </div>
          </div>
          <div className='about-text'>

@@ -279,9 +279,8 @@ align-items: center;
 .profile-photo {
  width: 70%;                 /* Adjust as needed */
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
   z-index: 1;
-  position: relative;
  
   
 }
@@ -961,6 +960,11 @@ flex-direction: column;
 .home-text{
   width:100%;
   padding:0rem;
+ 
+}
+.image-background{
+   
+  margin-top: 1.5rem;
 }
 .home-text-content{
     margin:3rem;
@@ -971,7 +975,13 @@ flex-direction: column;
    margin:3rem;
    margin-top: 0;
 }
-
+.image-background img{
+  
+    height:300px;
+    width:240px;
+  
+    
+}
 /* home section responsiveness is ending here */
 
 
@@ -999,6 +1009,7 @@ flex-direction: column;
     margin:3rem;
     margin-top: 0;
 }
+
 /* about section responsive is ending here */
 
 
@@ -1131,12 +1142,7 @@ contact responsive is starting from here */
     display: flex;
 }
 
-.image-background img{
-    height:300px;
-    width:240px;
-  
-    
-}
+
 
 }
 
