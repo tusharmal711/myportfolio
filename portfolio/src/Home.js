@@ -78,14 +78,14 @@ const removeNavPopup = ()=>{
      
 <div className='nav-popup' id="nav-popup">
   <RxCross1 className='cross' onClick={removeNavPopup}/>
-     <a href="#" className="nav-link-mobile">Home</a>
-        <a href="#about" className="nav-link-mobile">About</a>
-         <a href="#experience" className="nav-link-mobile">Experience</a>
-          <a href="#projects" className="nav-link-mobile">Projects</a>
-           <a href="#certification" className="nav-link-mobile">Certification</a>
-           <a href="#education" className="nav-link-mobile">Education</a>
+     <a href="#" className="nav-link-mobile" onClick={removeNavPopup}>Home</a>
+        <a href="#about" className="nav-link-mobile" onClick={removeNavPopup}>About</a>
+         <a href="#experience" className="nav-link-mobile" onClick={removeNavPopup}>Experience</a>
+          <a href="#projects" className="nav-link-mobile" onClick={removeNavPopup}>Projects</a>
+           <a href="#certification" className="nav-link-mobile" onClick={removeNavPopup}>Certification</a>
+           <a href="#education" className="nav-link-mobile" onClick={removeNavPopup}>Education</a>
           
-            <a href="#contact" className="nav-link mobile-contact">Contact</a>
+            <a href="#contact" className="nav-link mobile-contact" onClick={removeNavPopup}>Contact</a>
 </div>
 
 
