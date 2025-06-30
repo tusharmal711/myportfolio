@@ -1009,6 +1009,9 @@ flex-direction: column;
     margin:3rem;
     margin-top: 0;
 }
+.about-img-background{
+    display: none;
+}
 
 /* about section responsive is ending here */
 
