@@ -523,8 +523,9 @@ const removeNavPopup = ()=>{
                    <h2>GRADUATION</h2>
                    <p>College : Tarakeswar Degree College</p>
                   <p>University :  Burdwan University </p>
-                  <p>Passing Year : 2021 </p>
-                  <p>Marks : 77.4%</p>
+                  <p>Stream : B.SC Computer Science</p>
+                  <p>Passing Year : 2024 </p>
+                  <p>Marks : 84.37%</p>
               </div>
               <div className='edu1'>
                  <img src="./Images/mm-logo.png" />
@@ -532,6 +533,7 @@ const removeNavPopup = ()=>{
                    <span>Current </span>
                    <p>College : Techno Main Salt Lake</p>
                   <p>University :  MAKAUT </p>
+                  <p>Stram : MCA (Master of Computer Applications)</p>
                   
                   
               </div>
